@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  yx248-mini8:
+    build: .
+    image: yx248-mini8-image
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}

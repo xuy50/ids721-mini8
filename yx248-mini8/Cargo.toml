@@ -1,0 +1,21 @@
+[package]
+name = "yx248-mini8"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "~2.27.0"
+tokio = { version = "1.36.0", features = ["macros", "full"] }
+tower = "0.4.13"
+# s3
+rusoto_core = "0.47.0"
+rusoto_s3 = "0.47.0"
+csv = "1.1"
+# json
+serde_json = "1.0.113"
+serde = { version = "1.0.196", features = ["derive"] }
+# openssl
+openssl = { version = "0.10", features = ["vendored"] }
+
